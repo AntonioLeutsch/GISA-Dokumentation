@@ -1,0 +1,790 @@
+@import 'imports';
+@import 'variables';
+@import 'mixins';
+@import 'sg';
+@import "elegant";
+
+body {
+    font-family: $sans-serif;
+    color: $schwarz;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+audio,
+img,
+svg,
+video {
+    max-width: 100%;
+}
+/* -------------------------------------------------------------------------
+ Colors
+---------------------------------------------------------------------------- */
+.gisa-color {
+    position: relative;
+    padding: 0 0 0.5rem;
+    background: white;
+
+    &:after,
+    &:before {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: "";
+        transition: opacity 0.2s ease-in;
+        border-radius: 0.0625rem;
+        will-change: opacity;
+    }
+
+    &:before {
+        opacity: 1;
+        box-shadow: $card-shadow;
+    }
+
+    &:after {
+        opacity: 0;
+        box-shadow: $card-shadow-h;
+    }
+
+    &:hover:before {
+        opacity: 0;
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+
+    .gisa-color-name {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .gisa-color-value {
+        padding: 0 0.5rem;
+    }
+}
+/* -------------------------------------------------------------------------
+ Alerts
+---------------------------------------------------------------------------- */
+/**
+ * Alert styles. Your patterns/styles will vary.
+ * You should link your main stylesheet up with Style Guide Boilerplate for
+ * best results. When you update your site's styles, your style guide will
+ * update as well.
+ */
+.alert {
+    margin-bottom: 20px;
+    padding: 8px 35px 8px 14px;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.alert-warning {
+    color: #8b6d3a;
+    border-color: #fbeed5;
+    background-color: #fcf8e3;
+}
+
+.alert-error {
+    color: #aa4342;
+    border-color: #eed3d7;
+    background-color: #f2dede;
+}
+
+.alert-success {
+    color: #3c773d;
+    border-color: #d6e9c6;
+    background-color: #dff0d8;
+}
+
+.alert-info {
+    color: #2f7090;
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+}
+/* -------------------------------------------------------------------------
+ Breadcrumbs
+---------------------------------------------------------------------------- */
+/**
+ * Breadcrumb styles for first pattern. Your patterns/styles will vary.
+ * You should link your main stylesheet up with Style Guide Boilerplate for
+ * best results. When you update your site's styles, your style guide will
+ * update as well.
+ */
+.breadcrumb {
+    margin: 0 0 20px;
+    padding: 8px 15px;
+    list-style: none;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+
+    li {
+        display: inline-block;
+        text-shadow: 0 1px 0 #fff;
+        *display: inline;
+        *zoom: 1;
+
+        a {
+            text-decoration: none;
+            color: #007f96;
+
+            &:hover {
+                color: #004068;
+            }
+        }
+
+        .divider {
+            padding: 0 5px;
+            color: #767676;
+        }
+    }
+
+    .active {
+        color: #555;
+    }
+}
+/* -------------------------------------------------------------------------
+ Back to Top
+---------------------------------------------------------------------------- */
+.gisa-btn--top {
+    text-decoration: none;
+    color: $blau;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nvii {
+    text-decoration: none;
+    color: $blau;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+/* -------------------------------------------------------------------------
+ Headlines
+---------------------------------------------------------------------------- */
+.blocks {
+    display: block;
+    clear: both;
+    margin-bottom: 1rem;
+    padding: 1rem 0 0.5rem;
+}
+
+.headlines {
+    dd.blocks {
+        @extend .blocks;
+    }
+}
+
+.s-gisa-h1 {
+    letter-spacing: 0.5px;
+    text-transform: none;
+    color: $blau;
+    font-weight: 300;
+    font-style: normal;
+    @include fontSize(44px);
+    @include lineHeight(66px);
+}
+
+.s-gisa-h2 {
+    text-transform: none;
+    color: $schwarz;
+    font-weight: 300;
+    font-style: normal;
+    @include fontSize(30px);
+    @include lineHeight(36px);
+}
+
+.s-gisa-h3 {
+    text-transform: uppercase;
+    color: $blau;
+    font-weight: 200;
+    font-style: normal;
+    @include fontSize(36px);
+    @include lineHeight(72px);
+}
+
+.s-gisa-h4 {
+    letter-spacing: 1px;
+    text-transform: none;
+    color: $blau;
+    font-weight: 200;
+    font-style: normal;
+    @include fontSize(40px);
+    @include lineHeight(66px);
+}
+
+.s-gisa-h5 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $schwarz;
+    font-weight: 700;
+    font-style: normal;
+    @include fontSize(18px);
+    @include lineHeight(26px);
+}
+
+.s-gisa-h6 {
+    text-transform: none;
+    color: $blau;
+    font-weight: 400;
+    font-style: italic;
+    @include fontSize(14px);
+    @include lineHeight(22px);
+}
+/* -------------------------------------------------------------------------
+ Seperators
+---------------------------------------------------------------------------- */
+.seperators {
+    hr {
+        &.normal {
+            position: relative;
+            display: block;
+            height: 1px;
+            margin: 10px 0;
+            border: 0;
+            border-bottom: 1px solid #959595;
+        }
+
+        &.fullwidth {
+            border-color: $blau;
+            @extend .normal;
+        }
+
+        &.short {
+            width: 50%;
+            margin: 10px auto 20px;
+            @extend .normal;
+        }
+    }
+
+    .lines {
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        display: block;
+        width: 15%;
+        min-width: 70px;
+        height: 1px;
+        content: '';
+        transform: translateY(-50%);
+        background: $grau;
+    }
+
+    .separator_wrapper {
+        position: relative;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+
+        .separator_content {
+            position: relative;
+            padding: 0 2rem;
+            letter-spacing: 0;
+            color: $blau;
+            background: white;
+            font-weight: 300;
+            @include fontSize(36px);
+            @include lineHeight(72px);
+
+            &:before {
+                right: -70px;
+                @extend .lines;
+            }
+
+            &:after {
+                left: -70px;
+                @extend .lines;
+            }
+        }
+    }
+}
+/* -------------------------------------------------------------------------
+ Images
+---------------------------------------------------------------------------- */
+.images {
+    .responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rounded {
+        border-radius: $border-radius;
+        @extend .responsive;
+    }
+}
+/* -------------------------------------------------------------------------
+ Slider
+---------------------------------------------------------------------------- */
+.owl-carousel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    background: $grau;
+    @include lineHeight(45px);
+    @include fontSize(14px);
+    transition: background ease 0.3s;
+
+    &:hover {
+        background: $schwarz;
+    }
+
+    &.left {
+        left: $navPosition;
+    }
+
+    &.right {
+        right: $navPosition;
+    }
+    @media (max-width: 760px) {
+        width: 30px;
+        height: 30px;
+        @include lineHeight(30px);
+
+        &.left {
+            left: $navPosition-m;
+        }
+
+        &.right {
+            right: $navPosition-m;
+        }
+    }
+}
+/* -------------------------------------------------------------------------
+ PACE
+---------------------------------------------------------------------------- */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    .pace-progress {
+        background: #fff;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 2px;
+    }
+}
+
+.pace-inactive {
+    display: none;
+}
+/* TABS */
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+        float: left;
+        flex: 0 0 50%;
+        @media (max-width: 760px) {
+            flex: 0 0 100%;
+        }
+
+        a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            transition: 0.3s;
+            @include fontSize(22px);
+            @include lineHeight(32px);
+            font-weight: 300;
+            color: $grau;
+
+            &:hover {
+                color: $blau;
+            }
+
+            &.active,
+            &:active,
+            &:focus {
+                color: $blau;
+            }
+        }
+    }
+}
+
+.tabcontent {
+    color: $schwarz;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s;
+    font-weight: 300;
+    @include lineHeight(33px);
+    margin-bottom: 5rem;
+}
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Sticky Sidebar */
+#scroll {
+    transition: all ease 0.3s;
+
+    &.is_stuck {
+        margin-top: 1.5rem;
+    }
+}
+/* Menu Spy */
+.gisa-nav-group {
+    @media (min-width: 1024px) {
+        .current-item {
+            a {
+                color: white;
+                border-left: 2px solid #34495e;
+                background: #22303e;
+            }
+        }
+    }
+}
+/* Accordion */
+.accordion {
+    dt {
+        display: block;
+        width: 100%;
+        background: white;
+        color: $grau;
+        padding: 1rem;
+        cursor: pointer;
+        float: none;
+        @include fontSize(28px);
+        letter-spacing: 1px;
+        font-weight: 300;
+        line-height: normal;
+
+        &.active,
+        &:hover {
+            color: $blau;
+        }
+    }
+
+    dd {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        border: 0;
+        display: none;
+        @include fontSize(18px);
+        @include lineHeight(32px);
+        font-weight: 300;
+
+        p {
+            margin: 0;
+            padding-left: 2.25rem;
+        }
+
+        .active {
+            display: block;
+        }
+    }
+}
+/* Counter */
+.countit dt {
+    margin-bottom: 1rem;
+}
+
+.background {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+
+    .counters {
+        color: white;
+        text-shadow: $text-shadow;
+    }
+}
+
+.counters {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    color: $blau;
+    margin-top: 2rem;
+    padding: 0;
+
+    li {
+        flex: 1 0 25%;
+        @media (max-width: 1024px) {
+            flex: 1 0 100%;
+        }
+
+        .icon {
+            display: block;
+            @include fontSize(80px);
+            margin-bottom: 1rem;
+        }
+
+        .timer-wrap {
+            font-weight: 300;
+            @include fontSize(32px);
+            @include lineHeight(24px);
+
+            p {
+                @include fontSize(22px);
+                margin-top: 1rem;
+                font-weight: 200;
+                padding: 0 0.5rem;
+            }
+        }
+    }
+}
+/* blockquote */
+blockquote {
+    display: table;
+    quotes: none;
+    @include fontSize(20px);
+    @include lineHeight(72px);
+    color: $blau;
+    @media (max-width: 1025px) {
+        width: 100%;
+        margin: 0;
+    }
+
+    .icon {
+        display: table-cell;
+        vertical-align: middle;
+        @include fontSize(48px);
+    }
+
+    .quote {
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: 200;
+        text-align: justify;
+        text-transform: uppercase;
+    }
+}
+/* Icon with text */
+.icon_text_holder {
+    display: table;
+    @include fontSize(32px);
+    @include lineHeight(72px);
+    color: $schwarz;
+
+    .icon {
+        color: white;
+        display: table-cell;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        border-radius: 100%;
+        background-color: $blau;
+    }
+
+    .title {
+        display: table-cell;
+        padding-left: 1rem;
+        letter-spacing: 0.02em;
+        font-weight: 300;
+    }
+}
+/* Member */
+.mitarbeiter {
+    .image-holder {
+        display: block;
+        max-width: 256px;
+        position: relative;
+        overflow: hidden;
+
+        .member {
+            display: block;
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $blau;
+            transition: all 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            color: white;
+            line-height: 170px;
+            text-align: center;
+
+            i {
+                margin: 0 0.5rem;
+                @include fontSize(24px);
+                @include lineHeight(22px);
+                transition: all ease 0.3s;
+                position: relative;
+                display: inline-block;
+            }
+        }
+
+        &:hover .icons {
+            bottom: 0;
+            opacity: 1;
+            pointer-events: auto;
+
+            i {
+                &:hover {
+                    transform: translateY(-5px);
+                    text-shadow: $text-shadow;
+                }
+            }
+        }
+    }
+
+    .name {
+        @include fontSize(26px);
+        margin-bottom: 0.5rem;
+        color: $schwarz;
+        @include lineHeight(66px);
+        font-weight: 200;
+        text-transform: none;
+        display: block;
+    }
+
+    .position {
+        @include fontSize(14px);
+        color: $blau;
+        @include lineHeight(22px);
+        font-weight: 400;
+        font-style: italic;
+        text-transform: none;
+    }
+}
+/* Service Table */
+.service-table {
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    padding: 0;
+    @media (max-width: 1025px) {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .service-title {
+        background: $blau;
+        color: white;
+        padding: 1rem 0;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        @include fontSize(26px);
+    }
+
+    .service-icon {
+        @include fontSize(32px);
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .service-content {
+        ul {
+            padding: 0;
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+
+            li {
+                border-bottom: 2px solid $blau;
+                padding: 1rem 0;
+                font-weight: 300;
+
+                &:first-of-type {
+                    padding-top: 0;
+                }
+
+                &:last-of-type {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+/* Buttons */
+.buttons {
+    .gisa-btn {
+        float: none;
+        @include fontSize(18px);
+        font-weight: 600;
+        transition: all ease 0.3s;
+
+        &:active,
+        &:focus {
+            outline: 0;
+        }
+
+        &.white {
+            background: white;
+            color: $blau;
+            border-color: white;
+
+            &:hover {
+                background: $blau;
+                color: white;
+                border-color: $blau;
+            }
+        }
+    }
+
+    .cta {
+        background: $hellbau;
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        overflow: hidden;
+
+        .gisa-btn {
+            float: right;
+        }
+    }
+}
+.gisa-tree-list {
+  dt {
+    float: none;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  dd {
+    margin-left: 0
+  }
+}

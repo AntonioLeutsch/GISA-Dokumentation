@@ -1,0 +1,9 @@
+@mixin fontSize($px) {
+  font-size: $px;
+  font-size: $px / 16px * 1rem;
+}
+
+@mixin lineHeight($px) {
+  line-height: $px;
+  line-height: $px / 16px * 1rem;
+}

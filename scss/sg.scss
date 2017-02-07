@@ -1,0 +1,627 @@
+/* -------------------------------------------------------------------------
+
+ Style Guide Boilerplate
+ Repo: https://github.com/bjankord/Style-Guide-Boilerplate
+ Author: Brett Jankord
+ License: MIT
+
+---------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------
+ Layout
+---------------------------------------------------------------------------- */
+/* http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    color: $schwarz;
+}
+
+.gisa-header {
+    /* For older browsers */
+    padding-top: 0.75rem;
+    padding-top: 12px;
+    padding-bottom: 0.75rem;
+    padding-bottom: 12px;
+
+    color: #fff;
+    background: #34495e;
+    /* For older browsers */
+}
+
+.gisa-info,
+.gisa-section-group {
+    padding-bottom: 32px;
+    /* For older browsers */
+    padding-bottom: 2rem;
+}
+
+.gisa-wrapper {
+    position: relative;
+    /* Used to help sidebar height go all the way down the page */
+}
+
+.gisa-main,
+.gisa-sidebar {
+    padding-top: 24px;
+    /* For older browsers */
+    padding-top: 1.5rem;
+    padding-bottom: 16px;
+    /* For older browsers */
+    padding-bottom: 1rem;
+}
+
+.gisa-sidebar {
+    padding-right: 16px;
+    /* For older browsers */
+    padding-right: 0 1rem;
+    padding-left: 16px;
+    /* For older browsers */
+    padding-left: 0 1rem;
+
+    color: #fff;
+    background: #2c3e50;
+
+    font-size: 80%;
+}
+
+.js .gisa-sidebar {
+    position: absolute;
+    top: -100%;
+
+    transition: opacity 0.6s ease-out;
+
+    opacity: 0;
+}
+
+.js.nav-is-active .gisa-sidebar {
+    position: static;
+
+    opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+    .gisa-sidebar,
+    .js .gisa-sidebar,
+    .js.nav-is-active .gisa-sidebar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        float: left;
+
+        width: 25%;
+
+        opacity: 1;
+
+        font-size: 100%;
+    }
+
+    .gisa-main {
+        float: right;
+
+        width: 75%;
+    }
+}
+/* -------------------------------------------------------------------------
+ Utility Classes
+---------------------------------------------------------------------------- */
+.gisa-container {
+    padding: 0 16px;
+    /* For older browsers */
+    padding: 0 1rem;
+}
+
+.gisa-clearfix:after,
+.gisa-clearfix:before,
+.gisa-container:after,
+.gisa-container:before,
+.gisa-markup-controls:after,
+.gisa-markup-controls:before,
+.gisa-section:after,
+.gisa-section:before {
+    display: table;
+
+    content: "";
+
+    line-height: 0;
+}
+
+.gisa-clearfix:after,
+.gisa-container:after,
+.gisa-markup-controls:after,
+.gisa-section:after {
+    clear: both;
+}
+
+.gisa-visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+.gisa-visually-hidden-focusable:active,
+.gisa-visually-hidden-focusable:focus {
+    position: static;
+
+    overflow: visible;
+    clip: auto;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+/* -------------------------------------------------------------------------
+ Modules
+---------------------------------------------------------------------------- */
+/* Fonts
+---------------------------------------------------------------------------- */
+/* SG Font 1 */
+.gisa-about p,
+.gisa-color-value,
+.gisa-font1,
+.gisa-logo {
+    font-family: 'Roboto', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+/* SG Font 2 */
+.gisa-color-name,
+.gisa-font-list dt,
+.gisa-font2,
+.gisa-h1,
+.gisa-h2,
+.gisa-h3,
+.gisa-logo em,
+.gisa-nav-toggle {
+    font-family: 'Roboto', "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+}
+
+.gisa-subnav-title {
+    font-weight: 300;
+}
+/* Branding
+---------------------------------------------------------------------------- */
+.gisa-logo {
+    float: left;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 1em;
+    line-height: 2;
+}
+
+.gisa-logo-full {
+    display: none;
+}
+
+.gisa-logo em {
+    font-style: normal;
+}
+@media screen and (min-width: 650px) {
+    .gisa-logo-initials {
+        display: none;
+    }
+
+    .gisa-logo-full {
+        display: inline;
+    }
+}
+/* Navigation
+---------------------------------------------------------------------------- */
+.gisa-nav-toggle {
+    float: right;
+
+    padding: 5px 8px;
+    /* For older browsers */
+    padding: 0.3125rem 0.5rem;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #34495e;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: 16px;
+    font-size: 1rem;
+
+    &:hover {
+        color: white;
+        border-color: white;
+        background: #34495e;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .gisa-nav-toggle {
+        display: none;
+    }
+}
+
+.gisa-nav-group,
+.gisa-nav-group li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    font-weight: 100;
+}
+
+.gisa-nav-group li {
+    margin-bottom: 0.5em;
+}
+
+.gisa-nav-group a,
+.gisa-nav-group a:visited {
+    display: block;
+
+    padding: 0.35em 0 0.35em 0.5em;
+
+    transition: all 0.15s ease-in;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    color: #fff;
+    border-left: 2px solid transparent;
+
+    font-size: 1.2em;
+}
+
+.gisa-nav-group a:focus,
+.gisa-nav-group a:hover {
+    color: #fff;
+    border-left: 2px solid #34495e;
+    background: #22303e;
+}
+
+.gisa-nav-group .gisa-subnav-parent {
+    margin: 2.5em 0;
+}
+
+.gisa-nav-group:first-child > .gisa-subnav-parent {
+    margin-top: 0;
+}
+/* Typography
+---------------------------------------------------------------------------- */
+.gisa-h1,
+.gisa-h2,
+.gisa-h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.gisa-h1 {
+    padding-bottom: 0.2em;
+
+    text-transform: capitalize;
+
+    font-size: 2em;
+}
+
+.gisa-h2 {
+    margin-bottom: 0.75em;
+    padding-bottom: 0.2em;
+
+    text-transform: capitalize;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 1.75em;
+}
+
+.gisa-h3 {
+    font-size: 1.5em;
+}
+
+.gisa-about p {
+    font-size: 1.1em;
+}
+/* Buttons
+---------------------------------------------------------------------------- */
+.rev-wrapper {
+    display: block;
+    clear: both;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+}
+
+.gisa-btn {
+    float: left;
+
+    padding: 0.5em 0.9em;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: white;
+    border: none;
+    border: 2px solid $blau;
+    border-radius: 4px;
+    background: $blau;
+    box-shadow: $btn-shadow;
+    text-shadow: $text-shadow;
+
+    font-size: 16px;
+    /* For older browsers */
+    font-size: 1rem;
+
+    &:hover {
+        border-color: #002a80;
+        background: #002a80;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.no-flo {
+    float: none;
+}
+
+.gisa-btn--top {
+    float: right;
+}
+
+.gisa-btn--select,
+.gisa-btn--source {
+    display: none;
+}
+/* Show specific buttons we cut the mustard */
+.gisa-enhanced .gisa-btn--source {
+    display: block;
+}
+@media screen and (min-width: 1025px) {
+    .gisa-enhanced .gisa-btn--select {
+        display: block;
+    }
+}
+
+.gisa-btn--select {
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 1px;
+
+    border-radius: 0 0.2em;
+}
+
+.gisa-btn--select-active:hover:after {
+    position: absolute;
+    z-index: 98;
+    top: 48px;
+    /* For older browsers */
+    top: 3rem;
+    right: 8px;
+    /* For older browsers */
+    right: 0.5rem;
+
+    display: block;
+
+    padding: 8px 16px;
+    /* For older browsers */
+    padding: 0.5rem 1rem;
+
+    content: "Selected code ready to be copied";
+    white-space: nowrap;
+
+    color: #fff;
+    border-radius: 5px;
+    background: #111;
+    /* For older browsers */
+    background: rgba(0,0,0,.8);
+}
+
+.gisa-btn--select-active:hover:before {
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    top: 2.5rem;
+    left: 45%;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #111 transparent;
+}
+/* Sections
+---------------------------------------------------------------------------- */
+.gisa-section {
+    margin-bottom: 32px;
+    /* For older browsers */
+    margin-bottom: 3rem;
+}
+/* Colors
+---------------------------------------------------------------------------- */
+.gisa-color {
+    margin-bottom: 1.5em;
+}
+
+.gisa-color-swatch {
+    padding-top: 20%;
+    /* Used to set height of color swatch */
+}
+
+.gisa-color-name {
+    /* Test this with 1.1 em */
+    padding: 0.5em 0;
+
+    font-size: 1.2em;
+}
+
+.gisa-color-value {
+    font-size: 1.2em;
+    /* Test this with 1.1 em */
+}
+@media only screen and (min-width: 375px) {
+    .gisa-color-grid {
+        overflow: hidden;
+
+        margin: 0 -2.5%;
+    }
+
+    .gisa-color {
+        float: left;
+
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .gisa-color-swatch {
+        padding-top: 60%;
+        /* Used to set height of color swatch */
+    }
+}
+@media only screen and (min-width: 760px) {
+    .gisa-color {
+        width: 22%;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+    }
+
+    .gisa-color-grid {
+        margin: 0 -1.5%;
+    }
+}
+/* Fonts
+---------------------------------------------------------------------------- */
+.gisa-font-list,
+.gisa-font-list li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.gisa-font-list {
+    font-size: 1.1em;
+}
+
+.gisa-font-list dt {
+    display: block;
+
+    padding-bottom: 0.25em;
+}
+
+.gisa-font-list dd {
+    display: block;
+
+    margin-bottom: 0.75em;
+    margin-left: 0;
+    padding-bottom: 0.75em;
+
+    border-bottom: 1px solid #ddd;
+}
+@media only screen and (min-width: 760px) {
+    .gisa-font-list dt {
+        float: left;
+
+        padding-right: 0.25em;
+    }
+}
+/* Markup
+---------------------------------------------------------------------------- */
+.gisa-doc {
+    margin-bottom: 1em;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.gisa-markup-controls {
+    padding-top: 1.5em;
+}
+
+.gisa-source {
+    position: relative;
+}
+
+.gisa-source pre {
+    overflow-x: scroll;
+
+    padding: 0.5em 0.3em;
+
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    background: #333;
+}
+
+.gisa-source pre code {
+    background: transparent;
+
+    -webkit-font-smoothing: antialiased;
+}
+/* Hide source code blocks off-screen */
+.gisa-enhanced .gisa-source {
+    position: absolute;
+    top: -100%;
+
+    width: 1px;
+
+    transition: opacity 0.6s ease-out;
+
+    opacity: 0;
+}
+/* Show source code blocks when active or JS is not enabled */
+.gisa-enhanced .gisa-source-active {
+    position: relative;
+
+    width: 100%;
+
+    opacity: 1;
+}
+/* Videos
+---------------------------------------------------------------------------- */
+.gisa-video {
+    position: relative;
+
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.gisa-video video {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}

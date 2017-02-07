@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------
+
+ Style Guide Boilerplate
+ Repo: https://github.com/bjankord/Style-Guide-Boilerplate
+ Author: Brett Jankord
+ License: MIT
+
+---------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------
+ Old IE Styles
+---------------------------------------------------------------------------- */
+.gisa-container {
+  min-width: 1024px; }
+
+.gisa-sidebar,
+.js .gisa-sidebar,
+.js.nav-is-active .gisa-sidebar {
+  bottom: 0;
+  float: left;
+  font-size: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 25%; }
+
+.gisa-main {
+  float: right;
+  width: 75%; }
+
+.gisa-logo-initials {
+  display: none; }
+
+.gisa-logo-full {
+  display: inline; }
+
+.gisa-nav-toggle {
+  display: none; }
+
+.gisa-enhanced .gisa-btn--select {
+  display: block; }
+
+.gisa-color-grid {
+  margin: 0 -2.5%;
+  overflow: hidden; }
+
+.gisa-color {
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 45%; }
+
+.gisa-color-swatch {
+  padding-top: 60%;
+  /* Used to set height of color swatch */ }
+
+.gisa-color {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  width: 22%; }
+
+.gisa-color-grid {
+  margin: 0 -1.5%; }
+
+.gisa-font-list dt {
+  float: left;
+  padding-right: .25em; }
