@@ -780,11 +780,17 @@ blockquote {
 .gisa-tree-list {
   dt {
     float: none;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 500;
+    opacity: .8;
   }
   dd {
-    margin-left: 0
+    margin-left: 0;
+    @include lineHeight(28px);
+
+    & + dt {
+      margin-top: 1rem;
+    }
   }
 }
