@@ -1,0 +1,22 @@
+npm {
+  "name": "gisadokumentation",
+  "version": "1.0.0",
+  "description": "Dokumentation des Gisa Systems als WebApp.",
+  "main": "index.html",
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioLeutsch/GISA-Dokumentation.git"
+  },
+  "author": "anl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioLeutsch/GISA-Dokumentation/issues"
+  },
+  "homepage": "https://github.com/AntonioLeutsch/GISA-Dokumentation#readme",
+  "devDependencies": {
+    "gutenberg-css": "^0.4.1"
+  }
+}
