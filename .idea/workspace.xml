@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14dd306b-a08c-426d-89ba-14774dd0cfdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GISA_Dokumentation_node_modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/.sass-cache/944beede5c22ab6acf39e680ebe71d80b9244903/style.scssc" afterPath="$PROJECT_DIR$/scss/.sass-cache/944beede5c22ab6acf39e680ebe71d80b9244903/style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GISA Dokumentation.iml" afterPath="$PROJECT_DIR$/.idea/GISA Dokumentation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit" afterPath="$PROJECT_DIR$/config.codekit" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gisa-scripts.js" afterPath="$PROJECT_DIR$/js/gisa-scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -27,32 +27,54 @@
     <favorites_list name="GISA Dokumentation" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding>
-                <element signature="e#2210#2215#0" expanded="true" />
-                <element signature="e#7460#7465#0" expanded="true" />
-                <element signature="e#16031#16036#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gisa-scripts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="600">
+                  <caret line="368" column="153" selection-start-line="368" selection-start-column="153" selection-end-line="368" selection-end-column="153" />
+                  <folding>
+                    <element signature="e#2210#2215#0" expanded="true" />
+                    <element signature="e#11855#11860#0" expanded="true" />
+                    <element signature="e#19214#19220#0" expanded="true" />
+                    <element signature="e#19228#19234#0" expanded="true" />
+                    <element signature="e#22082#22088#0" expanded="true" />
+                    <element signature="e#22104#22110#0" expanded="true" />
+                    <element signature="e#23853#23858#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gisa-scripts.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1395">
+                  <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scss/style.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="143">
+                  <caret line="805" column="27" selection-start-line="805" selection-start-column="27" selection-end-line="805" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -75,16 +97,13 @@
       <projects_view />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/js/gisa-scripts.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -128,26 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GISA Dokumentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GISA Dokumentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GISA Dokumentation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="Scratches">
         <subPane>
           <PATH>
@@ -166,7 +166,40 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GISA Dokumentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GISA Dokumentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GISA Dokumentation" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GISA Dokumentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GISA Dokumentation" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -246,22 +279,25 @@
       <workItem from="1488810839965" duration="21000" />
       <workItem from="1488881269324" duration="6626000" />
       <workItem from="1488969233556" duration="109000" />
-      <workItem from="1489044538969" duration="1252000" />
+      <workItem from="1489044538969" duration="1575000" />
+      <workItem from="1489049683918" duration="1855000" />
+      <workItem from="1489393544331" duration="35000" />
+      <workItem from="1489498291186" duration="2336000" />
+      <workItem from="1489562727561" duration="7316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8841000" />
+    <option name="totallyTimeSpent" value="20706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1005" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -284,6 +320,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -309,40 +346,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4425">
-          <caret line="295" column="34" selection-start-line="295" selection-start-column="34" selection-end-line="295" selection-end-column="34" />
-          <folding>
-            <element signature="e#2210#2215#0" expanded="true" />
-            <element signature="e#7460#7465#0" expanded="true" />
-            <element signature="e#16031#16036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11730">
-          <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4425">
-          <caret line="295" column="34" selection-start-line="295" selection-start-column="34" selection-end-line="295" selection-end-column="34" />
-          <folding>
-            <element signature="e#2210#2215#0" expanded="true" />
-            <element signature="e#7460#7465#0" expanded="true" />
-            <element signature="e#16031#16036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -353,28 +374,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#2210#2215#0" expanded="true" />
-            <element signature="e#7460#7465#0" expanded="true" />
-            <element signature="e#16031#16036#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2210#2215#0" expanded="true" />
-            <element signature="e#7460#7465#0" expanded="true" />
-            <element signature="e#16031#16036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sg-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1395">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -385,9 +398,106 @@
           <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
           <folding>
             <element signature="e#2210#2215#0" expanded="true" />
-            <element signature="e#7460#7465#0" expanded="true" />
-            <element signature="e#16031#16036#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="295" column="34" selection-start-line="295" selection-start-column="34" selection-end-line="295" selection-end-column="34" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11730">
+          <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="295" column="34" selection-start-line="295" selection-start-column="34" selection-end-line="295" selection-end-column="34" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sg-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -395,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -403,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -411,15 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,15 +526,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gisa-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="1395">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gutenberg-css/scss/_page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/gisa.local/wp-content/themes/gisa-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3748">
+          <caret line="1181" column="0" selection-start-line="1181" selection-start-column="0" selection-end-line="1181" selection-end-column="0" />
+          <folding>
+            <marker date="1489412167000" expanded="true" signature="2932:3088" ph="..." />
+            <marker date="1489412167000" expanded="true" signature="3041:3078" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="5805:7356" ph="..." />
+            <marker date="1489412167000" expanded="true" signature="5839:7346" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="5888:7334" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="5955:7324" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="5973:6135" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="6155:6317" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="6338:6510" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="6531:6704" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="6725:6898" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="6920:7093" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="7116:7311" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14159:15578" ph="..." />
+            <marker date="1489412167000" expanded="true" signature="14193:15568" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14239:15556" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14339:15546" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14357:14519" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14539:14701" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14722:14895" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="14916:15090" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="15112:15286" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="15309:15533" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="16529:17948" ph="..." />
+            <marker date="1489412167000" expanded="true" signature="16563:17938" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="16609:17926" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="16709:17916" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="16727:16889" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="16909:17071" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="17092:17265" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="17286:17460" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="17482:17656" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="17679:17903" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="18846:18963" ph="..." />
+            <marker date="1489412167000" expanded="true" signature="18886:18948" ph="{...}" />
+            <marker date="1489412167000" expanded="true" signature="21869:22196" ph="SELECT t.nam... ${$wpdb-&gt;terms}" />
+            <marker date="1489412167000" expanded="true" signature="33842:33882" ph="select form_... wp_wysija_form" />
+            <marker date="1489412167000" expanded="true" signature="38471:38581" ph="select post_... wp_posts" />
+            <marker date="1489412167000" expanded="true" signature="41334:41431" ph="select ID, p... wp_posts" />
+            <marker date="1489412167000" expanded="true" signature="42559:42569" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="805" column="27" selection-start-line="805" selection-start-column="27" selection-end-line="805" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="368" column="153" selection-start-line="368" selection-start-column="153" selection-end-line="368" selection-end-column="153" />
+          <folding>
+            <element signature="e#2210#2215#0" expanded="true" />
+            <element signature="e#11855#11860#0" expanded="true" />
+            <element signature="e#19214#19220#0" expanded="true" />
+            <element signature="e#19228#19234#0" expanded="true" />
+            <element signature="e#22082#22088#0" expanded="true" />
+            <element signature="e#22104#22110#0" expanded="true" />
+            <element signature="e#23853#23858#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

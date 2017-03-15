@@ -57,7 +57,7 @@
                     <a href="#slider-carousel">Slider &amp; Carousel</a>
                 </li>
                 <li>
-                    <a href="#post-types">Custom Post Types <small>(Referenzen, Ziele, Mitarbeiter, etc.)</small></a>
+                    <a href="#post-types">Custom Post Types</a>
                 </li>
                 <li>
                     <a href="#cool">Cool Timeline</a>
@@ -134,10 +134,67 @@
                         </div>
 
                         <dl class="gisa-tree-list">
+                            <dt>Functions.php</dt>
+                            <dd>
+                                In der Functions Datei werden sämtliche manuell angelegte Verhaltensweisen, Funktionen,
+                                Shortcodes, Visual Composer Erweiterungen sowie Widgets angelegt. Dies erfolgt stets über
+                                die von Wordpress und Visual Composer vorgegebene Logik, so ist ein sicheres Verhalten
+                                bei Updates von Wordpress gegeben. Des weiteren werden über die Functions Datei CSS und
+                                Javascript Dateien in das Theme eingebunden. Das Child Theme greift auf die Hauptfunktionen
+                                über die Functions Datei des Parent Themes zu und erweitert diese um eine verlustfreie
+                                Bearbeitung gewährleisten zu können. Auch Globale Funktionen wie die Slider und Referenzen,
+                                werden aus der Functions Datei in einen Shortcode in den Visual Composer geparst.
+                            </dd>
+                        </dl>
+
+                        <dl class="gisa-tree-list">
                                                        <dt>GISA Options</dt>
                             <dd>
-                              Die GISA Options sind die Backend Einstellmöglichkeiten zum Theme, sie wurden zur einfachen Umstrukturierung des gesamten Themes angelegt.
-                              Sie dienen auch zur Visuellen darstellung der im Main Theme verankerten Funktionen und Möglichkeiten.
+                              Die GISA Options sind die backend Einstellmöglichkeiten zum Theme, sie wurden zur einfachen Umstrukturierung des gesamten Themes angelegt.
+                              Sie dienen auch zur Visuellen Darstellung der im Main Theme verankerten Funktionen und Möglichkeiten.
+                                Hierbei wurde ein eigener Menüpunkt angelegt, aus dem das globale Verhalten & Aussehen heraus gesteuert und angepasst wird.
+                                Das Ziel war hier die Möglichkeit zu schaffen ohne Vorahnung von Programmierkenntnissen dem Nutzer die Möglichkeit zu geben am Theme mitzuarbeiten.
+                            </dd>
+
+                        </dl>
+
+                        <dl class="gisa-tree-list">
+                                                       <dt>Shortcodes</dt>
+                            <dd>
+                              <table class="text-left">
+                                  <tr>
+                                      <th>Shortcode</th>
+                                      <th>Erklärung</th>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[referenzslider]</code></td>
+                                      <td>Ruft über die Funktion <strong>referenz_slider</strong> und die WP_Query einen Card-Slider mit dem Inhalt der Referenzen auf.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[referenzgrid]</code></td>
+                                      <td>Ruft über die Funktion <strong>referenzgrid</strong> und WP_Query ein Card-Grid mit dem Inhalt der Referenzen auf.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[neues-von-gisa]</code></td>
+                                      <td>Ruft über die Funktion <strong>neues_von_gisa</strong> und WP_Query eine durchlaufende Liste der News Einträge auf.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[termin]</code></td>
+                                      <td>Ruft über die Funktion <strong>termin</strong> und WP_Query (<em>post_type, meta_key, meta_value, meta_compare</em>) eine durchlaufende Liste der Events auf.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[contentBlocks postid=""]</code></td>
+                                      <td>Ruft über die Funktion <strong>contentBlocks</strong> und der WP Funktion <em>get_post</em> den Inhalt einer Seite auf und gibt diesen aus. Weche Seite ausgegeben wird übermittelt man mit der postid, welche der auszugebenden Post/Page id entsprechen sollte.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[ziele kategorie=""]</code></td>
+                                      <td>Ruft über die Funktion <strong>ziele_slider</strong> und WP_Query (<em>post_type, post_per_page, cat</em>) den Inhalt der Posts aus der gewählten Kategorie auf. Diese werden dann in einen Slider geladen und im Frontend dargestellt.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code>[archiv_events]</code></td>
+                                      <td>OBSOLET</td>
+                                  </tr>
+                              </table>
                             </dd>
 
                         </dl>
@@ -150,14 +207,23 @@
                         <dl class="gisa-tree-list">
                             <dt>GISA Slider</dt>
                             <dd>
-                                Der Gisa Slider hat diverse Funktion von Haus aus mitbekommen, die Hauptfunktion für das Projekt ist die Darstellung eines großen Hero Images in Verbindung mit einer Headline.
+                                Der Gisa Slider hat diverse Funktion von Haus aus mitbekommen, die Hauptfunktion für das
+                                Projekt ist die Darstellung eines großen Hero Images in Verbindung mit einer Headline.
                                 Alternativ gibt es die Möglichkeit ein Video in den Hintergrund zu laden.
-                                Die Slider werden über eine eindeutige Kategorie und dessen Shortcode auf die gewünschten Seiten geladen.<br><br>
+                                Die Slider werden über eine eindeutige Kategorie und dessen Shortcode auf die gewünschten
+                                Seiten geladen. Der Shortcode kann über die Kategorien abgerufen werden und sieht wie folgt aus.<br>
+                                <code>[qode_slider slider='<span class="red">kategorie_name</span>' auto_start='<span class="red">true</span>' animation_type='<span class="red">fade</span>' slide_animation='<span class="red">6000</span>' height='<span class="red">705</span>' responsive_height='' background_color='' anchor='' show_navigation='<span class="red">yes</span>' show_control='<span class="red">no</span>']</code>
+
+                                Dieser Shortcode wird dann auf einer Seite im Meta Feld <em>Select Slider Shortcode</em> platziert
+                                und ist somit aktiv.
                             </dd>
 
                             <dt>GISA Carousel</dt>
                             <dd>
-                              Über das Gisa Carousel können Logos von Partnerschaften, Zertifizierungen etc. eingeplegt und anschließend als Visual Composer Element auf Seiten eingebunden werden.
+                                Über das Gisa Carousel können Logos von Partnerschaften, Zertifizierungen etc. eingepflegt
+                                und anschließend als Visual Composer Element auf Seiten eingebunden werden. Hierbei wird
+                                nur die Struktur des Karussells vorgegeben welche Inhalte letztendlich dargestellt werden
+                                liegt am Benutzer.
                             </dd>
 
                         </dl>
@@ -171,8 +237,21 @@
                             <dt>Custom Post Types</dt>
                             <dd>
                                 Die Custom Post Types beinhalten Inhaltselemente die nicht von Wordpress vorgegeben werden, aber der Wordpress Struktur und Funktion folgen.
-                                Für eine Bessere Verwaltung wurden für diverse Inhalte z.B. "Referenzen" Custom Post Types angelegt, und mit einer eigenen Inhaltsstruktur versehen.
-                                Dadurch können im Visual Composer diverse Elemente erzeugt werden, diese beziehen ihren Conten aus den Post Types.
+                                Für eine bessere Verwaltung wurden für diverse Inhalte z. B. „GISA Ziele„ Custom Post Types angelegt, und mit einer eigenen Inhaltsstruktur versehen.
+                                Dadurch können im Visual Composer diverse Elemente erzeugt werden, diese beziehen ihren Content aus den Post Types und so lässt sich Micro Content im
+                                Backend pflegen und im Frontend als z. B. Cards ausgegeben werden.<br><br>
+
+                                Einige Custom Post Types sind zum Beispiel:
+                                <ul>
+                                    <li> GISA Slider</li>
+                                    <li> GISA Carousel</li>
+                                    <li> GISA Referenzen</li>
+                                    <li>Obsolet?? Neues aus den Medien</li>
+                                    <li>Obsolet?? Termine</li>
+                                    <li>Obsolet?? Aus den Social Networks</li>
+                                    <li> GISA Ziele</li>
+                                    <li> GISA Mitarbeiter</li>
+                                </ul>
                             </dd>
 
                         </dl>
@@ -187,6 +266,9 @@
                             <dd>
                                 Über die Timeline Stories können Beiträge erstellt werden, welche im Frontend der Seite in einem Zeitstrahl dargestellt werden.
                                 Dabei wird die Timeline nach dem Story Year sortiert, optional gibt es die Möglichkeit ein Bild für die Story zu hinterlegen.
+
+                                Eingebunden wird die Timeline dann auf der Seite Geschichte über den Shortcode des Plugins.
+                                <code>[cool-timeline]</code>
                             </dd>
 
                         </dl>
@@ -199,9 +281,16 @@
                         <dl class="gisa-tree-list">
                             <dt>Formulare</dt>
                             <dd>
-                                Über die Formulare werden diverse Funktionen zur Verfügung gestellt, mit der Möglichkeit "Hooks" und Erweiterungen zu ergänzen gibt es hier nahezu unendlich Möglichkeiten.
-                                Die Hauptfunktion ist dabei klar definiert, die Möglichkeit schnell und einfach ein Kontaktformular mit der dazugehörigen E-Mail Template Struktur zu erstellen.
-                                Als Erweiterung wurde die Möglichekeit hinzugefügt ein Formular an ein Download Bereich zu binden.
+                                Als solide, stabile und bevorzugte Grundlage aller Formulare wurde ContactForm7 installiert.
+                                Über das Plugin werden diverse Funktionen zur Verfügung gestellt, mit "Hooks" und Erweiterungen für das Plugin gibt es hier nahezu unendlich Möglichkeiten.
+                                Die Hauptfunktion ist dabei klar definiert, die Fähigkeit schnell und einfach ein Kontaktformular mit der dazugehörigen E-Mail Template Struktur zu erstellen.
+                                Als Erweiterung wurde die Verbindung zwischen Formularen und Downloads installiert.<br><br>
+
+                                Die Formulare werden entweder über den Visual Composer eingebunden oder den vom Plugin generierten Shortcode. Beispiel Shortcode:
+
+                                <code>
+                                    [contact-form-7 id="21525" title="Kontaktformular 1"]
+                                </code>
                             </dd>
 
                         </dl>
@@ -215,7 +304,11 @@
                             <dt>Downloads</dt>
                             <dd>
                                 Über die Downloads können diverse Datei Typen zum Download angeboten werden, dabei ist auch die Möglichkeit geschaffen ein individuelles Icon festzulegen.
-                                In Verbindung mit den Formularen wurde eine Erweriterung hinzugefügt welche den Download erst nach absenden eines Formulars ermöglicht.
+                                In Verbindung mit den Formularen wurde eine Erweriterung hinzugefügt welche den Download erst nach absenden eines Formulars ermöglicht.<br><br>
+
+                                Die Einbindung erfolgt über ein neu erstelltes Visual Composer Element <strong>&quot;Download&quot;</strong>.
+                                In diesem Element werden alle Downloads gesammelt und zur Auswahl gestellt. Der Ausgewählte Download wird dann mit der Struktur des Plugins dargestellt.
+                                Hier dient das Element nur als Schnittstelle zwischen Visual Composer und Download Plugin.
                             </dd>
 
                         </dl>
@@ -256,7 +349,7 @@
                             <dd>
                                 Eigentlich ist Mailpoet ein komplettes Newsletter System.
                                 Für das Projekt wird allerdings nur die Anmeldefunktion benötigt, die gesammelten Daten lassen sich dann einfach im Dashboard exportieren.
-                                Das Plugin sammelte von Sich aus die IP-Adressen der Abonennten. Diese werden vom Theme aber mit dem Null Wert 127.0.0.1 überschrieben.
+                                Das Plugin sammelte von Sich aus die IP-Adressen der Abonennten. Diese werden vom Plugin <strong>&quot;Reset IP Adresse&quot;</strong> aber mit dem Null Wert 127.0.0.1 überschrieben.
                             </dd>
 
                         </dl>
@@ -271,6 +364,9 @@
                             <dd>
                                 Das Plugin erlaubt es direkt aus Wordpress Beiträge zu diversen Social Media Kanälen zu posten.
                                 Dabei lässt sich über die Einstellungen die Ausgabe auf jedem Kanal individuell einstellen.
+                                Man legt also ein Template für jeden Kanal an, wie sich das Plugin bei veröffentlichung verhalten soll.<br><br>
+                                In Plugin selbst lassen sich die Postings zu verschiedenen Zeiten ausgeben, dabei wird zwischen dem direkten Posten und das Posten über einen Pseudo Cron Job von Wordpress unterschieden.
+                                Auch lassen sich Globale Einstellungen vornehmen wie ein URL Shortener, HTTPS Force, Auto Hashtags, und die Zeichenlänge.
                             </dd>
 
                         </dl>
